@@ -1,0 +1,20 @@
+.center {
+    background-color: rgb(40, 39, 88);
+    padding: 20px;
+    box-shadow: 10px 10px 10px 10px rgb(40, 39, 88);
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: medium;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  
+button:hover {
+    background-color: turquoise;
+  }
