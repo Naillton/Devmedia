@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color: blue;
+}
+  
+button:hover {
+  padding: 20px;
+  background-color: aqua;
+}
+
+.btnReturn {
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.btnConteudo {
+    padding: 15px;
+    margin-left: 40px;
+}
