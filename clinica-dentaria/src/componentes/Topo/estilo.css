@@ -1,0 +1,58 @@
+.topo{
+    background-color:#1b3675;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    width: 100%;
+}
+
+.topo-conteudo{
+    max-width: 1024px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    margin: 0 auto;
+}
+
+.topo-logo-box{
+    display: flex;
+    align-items: center;
+}
+
+.topo-logo{
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.topo-nome-empresa{
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.topo-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 15px 10px 15px;
+
+    text-transform: uppercase;
+    line-height: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.topo-link:hover {
+    border-bottom: 3px solid #fff;
+}
+
+@media (max-width: 600px) {
+    .topo-nome-empresa {
+        display: none;
+    }
+
+    .lista-sobre-aparelho {
+        flex-direction: column;
+    }
+}
