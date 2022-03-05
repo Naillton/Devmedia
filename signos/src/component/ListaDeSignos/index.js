@@ -8,7 +8,6 @@ export default function ListaDeSignos() {
   return (
     <div>
       <Titulo />
-
       <div className="lista">
         { arrayObj.map((card) => <ItemLista 
           signo={ card.signo } 
