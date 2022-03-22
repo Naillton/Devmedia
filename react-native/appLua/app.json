@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "appLua",
+    "slug": "appLua",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
