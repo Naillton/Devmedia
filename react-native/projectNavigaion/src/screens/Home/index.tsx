@@ -2,6 +2,8 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { style } from "./styles";
 
+// Obs: usar o useNavigation();
+
 export function Home(props: { navigation: { navigate: (arg0: string) => void; }; }) {
   return (
     <View style={ style.container }>
