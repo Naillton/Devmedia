@@ -7,7 +7,7 @@ import cyber from '../../../assets/jogo-2.png';
 import halo from '../../../assets/jogo-4.png';
 import { styles } from "./styles";
 
-export default function Games() {
+export default function Games(){
   return(
     <ScrollView>
         <View style={ styles.container }>
@@ -17,6 +17,7 @@ export default function Games() {
         </Text>
         <Text style={ styles.text }>Para os nossos consoles temos jogos em 4K</Text>
         <ImageBackground
+            resizeMode="contain"
             source={ forza }
             style={ styles.backImg }
         >

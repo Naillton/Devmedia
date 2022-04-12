@@ -10,7 +10,7 @@ const { Navigator, Screen } = createStackNavigator();
 
 export function AppRoutes() {
   return(
-    <Navigator>     
+    <Navigator>
       <Screen 
         name="Home"
         component={Home}

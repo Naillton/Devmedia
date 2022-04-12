@@ -19,17 +19,17 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     padding: 10,
   },
-  
-  backImg: {
-    width: 300,
-    height: 200,
-    marginVertical: 20,
-  },
 
   containerText: {
     backgroundColor: 'black',
     opacity: 0.5,
     width: '100%',
+  },
+
+  backImg: {
+    width: 300,
+    height: 200,
+    marginVertical: 20,
   },
 
   textGame: {

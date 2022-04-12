@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { ImageBackground, View, Text, Image } from "react-native";
+import { ImageBackground, View, Text, Image, ImageProps } from "react-native";
 
 import fundo from '../../../assets/fundo-xcloud.png';
 import xcloud from '../../../assets/xcloud-2.png';
@@ -13,7 +13,6 @@ export default function Cloud() {
       source={ fundo }
       style={ styles.imgContainer }
     >
-      <StatusBar style="auto" />
       <View style={ styles.container }>
         <Text style={ styles.title }>
           Xbox CLoud Gaming
