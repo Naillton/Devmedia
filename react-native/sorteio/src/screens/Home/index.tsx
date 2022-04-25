@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
+
+import { Header } from "../../components/header";
 import { styles } from "./styles";
 
 export function Home(){
@@ -11,6 +13,7 @@ export function Home(){
 
   return(
     <View style={ styles.container }>
+      <Header />
       <View style={ styles.header }>
         <Text style={ styles.texto }>Sorteio React</Text>
       </View>
