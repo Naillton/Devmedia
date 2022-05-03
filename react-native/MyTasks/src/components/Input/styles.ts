@@ -23,7 +23,8 @@ export const styles = StyleSheet.create({
     borderColor: "black",
     borderRadius: 8,
     width: 150,
-    height: 50
+    height: 50,
+    fontSize: 18,
   },
 
   btn: {

@@ -1,45 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { 
   View,
   TextInput,
   TouchableOpacity,
   Text,
   ScrollView,
-  Keyboard,
 } from 'react-native';
+import MyContext from "../../context/MyContext";
 
 import { Ionicons } from '@expo/vector-icons';
 import { styles } from "./styles";
 
 export default function Input() {
-  const [ value, setValue ] = useState('');
-  const [ array, setArray ] = useState([]);
-  const [ checked, setChecked ] = useState([]);
+  const {
+    value,
+    setValue,
+    array,
+    List,
+    checked,
+    setChecked,
+    delList
+  } = useContext(MyContext);
 
-  const List = (value: string) => {
-    setArray((prevValue) => {
-      return [
-        ...prevValue,
-        value
-      ];
-    });
-    Keyboard.dismiss();
-    setValue('');
-  }
-
-  const delList = () => {
-    setArray([]);
-  }
-
-  const backgroundFunc = (index) => {
-    return checked.includes(index) ? '#00FF00' : '#A020F0';
+  const backgroundFunc = (index: any) => {
+    return checked.includes(index) ? '#00FF00': '#A020F0';
   };
 
-  const rebornColor = (index) => {
+  const rebornColor = (index: any) => {
     if ( checked.includes(index)){
-      setChecked(checked.filter(( list ) => list !== index));
+      setChecked(checked.filter(( list: any ) => list !== index));
     }else {
-       setChecked([...checked, index]);
+      setChecked([...checked, index]);
     }
   }
 
@@ -79,14 +70,19 @@ export default function Input() {
       >
         <View style={ styles.scroll }>
           {
-            array.map((item, index) => (
+            array.map((item: any, index: any) => (
               <TouchableOpacity
                 key={ index }
                 style={[ styles.check, { backgroundColor: backgroundFunc(index) } ]}
                 activeOpacity = { 0.8 }
                 onPress = {() => rebornColor(index) }
               >
-                <Text style={styles.item}>{item}</Text>
+                <Text
+                  style={styles.item}
+                >
+                  {item}
+                  { backgroundFunc(index) === '#00FF00' ? <Ionicons name="checkmark" size={24} color="black" /> : '' }
+                </Text>
               </TouchableOpacity>
             ))
           }
