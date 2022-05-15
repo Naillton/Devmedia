@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(203, 186, 226);
+}
+
+.contWeb {
+  width: 420px;
+  background-color: 'rgb(54, 43, 92)';
+}
+
+.img {
+  width: 200px;
+  height: 120px;
+  margin: 30px;
+  border-radius: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleWeb {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: rgb(203, 186, 226);
+}
+
+.imgMobi {
+  width: 80px;
+  height: 140px;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 30px
+}

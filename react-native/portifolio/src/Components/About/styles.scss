@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex: 1;
+  width: 300px;
+  height: 160px;
+  margin-top: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+.title {
+  font-size: 24;
+  color: rgb(159, 199, 212);
+}
+
+.text {
+  font-size: 16;
+  color: rgb(75, 245, 151);
+  margin-top: 20px;
+}

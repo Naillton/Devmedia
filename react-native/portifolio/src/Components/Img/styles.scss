@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.img {
+  border-width: 2px;
+  border-color: aquamarine;
+  border-radius: 100px;
+  width: 150;
+  height: 150;
+}
